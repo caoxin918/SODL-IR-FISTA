@@ -17,3 +17,12 @@ Reference:
 - IR-FISTA: [HomSolver/irfista at main · wangguojim/HomSolver · GitHub](https://github.com/wangguojim/HomSolver/tree/main/irfista)
 
 - ODL: [GitHub - tiepvupsu/DICTOL: DICTOL - A Dictionary Learning Toolbox in Matlab and Python](https://github.com/tiepvupsu/DICTOL/tree/master)
+
+Usage:
+
+Consider having a system matrix A(m\*n) and surface optical data b(m\*1), we can obtain the result vector x(n\*1) in the following way:
+
+```matlab
+lambda = 0.001
+[~, ~, x] = ODL(b, A, lambda, [], []); 
+```
